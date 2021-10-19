@@ -1,3 +1,34 @@
-<div class="">
-  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas deserunt! Consequuntur, non? Iste esse aut, nostrum in, explicabo, neque sunt consequatur hic architecto laboriosam tempore perferendis molestias quibusdam saepe.</h1>
+<h1 class="mt-5 text-capitalize text-center">Bienvenido al sistema de gestion de notas</h1>
+<div class="row">
+  <div class="card m-5 col" style="width: 18rem;">
+    <img [src]="user.profilePhoto" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{user.name}} {{user.lastName}}</h3>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Usuario: {{user.username}}</li>
+      <li class="list-group-item">Rol: {{user.role.name}}</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="btn btn-dark">Modificar perfil</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card m-5" style="width: 18rem;">
+      <div class="card-body">
+        <h3 class="card-title">Notas <span><i class="bi bi-card-text"></i></span> </h3>
+        <p class="card-text">Aqui podras ver las notas que has creado</p>
+        <a href="#" class="btn btn-dark">Ver notas</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card m-5" style="width: 18rem;">
+      <div class="card-body">
+        <h3 class="card-title">Cursos <span><i class="bi bi-file-person-fill"></i></span></h3>
+        <p class="card-text">Aqui podras ver los cursos que has creado</p>
+        <a href="#" class="btn btn-dark">Ver cursos</a>
+      </div>
+    </div>
+  </div>
 </div>

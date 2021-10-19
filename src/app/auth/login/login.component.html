@@ -1,4 +1,4 @@
-<div class="vh-100 d-flex justify-content-center align-items-center">
+<div class="main-class d-flex justify-content-center align-items-center">
   <form (ngSubmit)="submit()" class="form-control w-50 shadow">
     <h1 class="text-center">Login</h1>
     <div class="form-group my-3">
@@ -25,6 +25,13 @@
     </div>
     <div class="d-flex justify-content-end">
       <button type="submit" class="btn btn-primary my-3">Ingresar</button>
+    </div>
+    <div *ngIf="loginError" class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+        Usuario o contraseña incorrectos
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   </form>
 </div>
